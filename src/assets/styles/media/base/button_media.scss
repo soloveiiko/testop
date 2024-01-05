@@ -1,0 +1,48 @@
+@include lg {
+  .button {
+
+    &_down {
+      width: 51rem;
+      height: 51rem;
+    }
+
+    &_yellow {
+      padding: 15rem 26rem;
+    }
+  }
+}
+
+@include md {
+  .button {
+    &__icon {
+      stroke-width: 0.1rem;
+    }
+
+    &_white:hover {
+      border-color: var(--color-black);
+      background-color: var(--color-white);
+    }
+
+    &_next,
+    &_prev,
+    &_disabled,
+    &_close,
+    &_circle-large,
+    &_circle-small,
+    &_icon-left,
+    &_icon-right,
+    &_white,
+    &_yellow {
+      &:hover {
+        color: var(--color-black);
+
+        .button {
+          &__icon {
+            fill: var(--color-black);
+            stroke: var(--color-black);
+          }
+        }
+      }
+    }
+  }
+}

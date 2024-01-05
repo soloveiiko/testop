@@ -1,0 +1,63 @@
+.banner__slider {
+    .slider {
+        width: 656rem;
+        margin: 0;
+        height: 612rem;
+        overflow: hidden;
+
+        &__slide {
+            max-width: 656rem;
+            height: 612rem;
+            padding-left: 5.5rem;
+            transition: var(--transition);
+            justify-content: center;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+
+        &__image {
+            width: 612rem;
+            height: auto;
+            object-fit: cover;
+        }
+
+    }
+
+    .progress {
+        &__wrapper {
+            position: relative;
+            padding-bottom: 56rem;
+            margin-right: -4rem;
+            width: 59rem;
+
+            svg {
+                width: 100%;
+                height: auto;
+                overflow: visible;
+                fill: none;
+            }
+        }
+
+
+        &__svg {
+            --progress: 0;
+            position: absolute;
+            stroke: var(--color-yellow);
+            stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+            stroke-dasharray: 125.6;
+            transform: rotate(90deg);
+            left: 0;
+            top: 0;
+        }
+
+        &__circle {
+            stroke-width: 3.5rem;
+            stroke: var(--color-silver);
+
+            &.circle__focus {
+                stroke: var(--color-yellow);
+
+            }
+        }
+    }
+}

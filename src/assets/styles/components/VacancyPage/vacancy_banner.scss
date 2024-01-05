@@ -1,0 +1,46 @@
+.vacancy-banner {
+    width: 100%;
+    // min-height: 100vh;
+
+    &__container {
+        width: 100%;
+        gap: 122rem;
+        padding: 258rem  0 0;
+        justify-content: center;
+    }
+
+    &__content {
+        width: 100%;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+    &__subtitle {
+        width: 285rem;
+    }
+
+    .content {
+
+        &__text {
+            padding-top: 8rem;
+            max-width: 50%;
+            width: 100%;
+            gap: 16rem;
+            p:nth-child(1) {
+                margin-bottom: 20rem;
+            }
+        }
+
+        &__subtitle,
+        &__text {
+            flex: 1;
+            flex-shrink: 0;
+            align-items: flex-start;
+            overflow: hidden;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }    
+}

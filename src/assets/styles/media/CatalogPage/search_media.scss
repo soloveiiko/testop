@@ -1,0 +1,42 @@
+@include lg {
+  .search-button {
+    margin-bottom: 80rem;
+    
+    &_gap {
+      padding: 13.8rem 20rem 13.8rem 25rem;
+      gap: 80rem;
+    }
+  }
+}
+
+@include md {
+  .search-button {
+    margin-left: 20rem;
+    
+    &_gap {
+      width: 100%;
+      padding-top: 15.3rem;
+      gap: 42rem;
+    }
+  }
+}
+
+@include sm {
+  .search-button {
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+    
+    .button__text {
+      font-size: 0;
+    }
+    
+    &_gap {
+      width: 48rem;
+      height: 48rem;
+      padding: 14rem;
+      gap: 0;
+    }
+  }
+}

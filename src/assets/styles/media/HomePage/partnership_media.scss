@@ -1,0 +1,69 @@
+@include lg {
+  .partnership {
+    height: 1118rem;
+
+    &__bg {
+      width: 1399rem;
+    }
+
+    &__title {
+      margin-top: 22rem;
+
+      &::after {
+        margin-top: -1rem;
+      }
+    }
+  }
+}
+
+@include md {
+  .partnership {
+    &__container {
+      height: 540rem;
+    }
+
+    &__title {
+      @include font-subtitle;
+    }
+
+    &__bg {
+      width: 110%;
+      height: fit-content;
+
+      svg {
+        height: auto;
+      }
+    }
+  }
+}
+
+@include sm {
+  .partnership {
+    &__container {
+      height: 350rem;
+    }
+
+    &__title {
+      font-size: 48rem;
+      margin-top: 4rem;
+      transform: translateY(-50%);
+      text-decoration: underline;
+
+      &::after {
+        display: none;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &__bg {
+      width: 380rem;
+    }
+  }
+}

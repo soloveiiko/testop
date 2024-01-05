@@ -1,0 +1,45 @@
+.become-partner {
+    width: 100%;
+    // min-height: 100vh;
+
+    &__container {
+        padding: 208rem 0 182rem;
+        width: 100%;
+    }
+
+    &__content {
+        flex: 1;
+        flex-shrink: 0;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: auto;
+        height: 486rem;
+    }
+    &__form{
+        width: 317rem;
+        align-items: stretch;
+        gap:22rem;
+
+        .form{
+            padding-top: 8rem;
+            gap:28rem;
+            align-items: stretch;
+
+            &_animate{
+                padding-top: 2rem;
+            }
+
+            &__text{
+                line-height: 120%;
+            }
+
+            .button_yellow{
+                width: 100%;
+                margin-top: 18rem;
+            }
+        }
+    }
+}

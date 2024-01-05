@@ -1,0 +1,91 @@
+@include lg {
+  .showreel {
+    padding: 122rem 0 199rem;
+
+    &__container {
+      width: 1266rem;
+      height: 712rem;
+      padding: 50rem 60rem;
+    }
+
+    &__logo {
+      height: 101rem;
+    }
+
+    &__subtitle {
+      padding-top: 0;
+    }
+
+    &__button {
+      gap: 12rem;
+      width: 200rem;
+    }
+
+    &__bg {
+      width: 1482.667rem;
+    }
+  }
+}
+
+@include md {
+  .showreel {
+    padding: 158rem 10rem 158rem;
+
+    &__container {
+      width: 740rem;
+      height: 416rem;
+      padding: 20rem 30rem;
+    }
+
+    &__logo {
+      width: auto;
+      height: 60rem;
+    }
+
+    &__bg {
+      width: 110%;
+    }
+  }
+}
+
+@include sm {
+  .showreel {
+    padding: 66rem 0 80rem;
+
+    &__container {
+      width: 340rem;
+      height: 191.156rem;
+      padding: 10rem 10rem;
+    }
+
+    &__header {
+      padding-right: 6rem;
+    }
+
+    &__button {
+      padding: 13rem 20rem 13rem 23rem;
+      gap: 14rem;
+
+      .button {
+        &__icon {
+          width: 12rem;
+          height: auto;
+        }
+      }
+    }
+
+    &__logo {
+      height: 40rem;
+    }
+
+    &__subtitle {
+      padding-top: 0;
+      font-size: 16rem;
+      padding-bottom: 6rem;
+    }
+
+    &__bg {
+      width: 380rem;
+    }
+  }
+}

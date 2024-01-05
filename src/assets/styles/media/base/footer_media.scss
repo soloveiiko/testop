@@ -1,0 +1,126 @@
+@include lg {
+  .footer {
+    padding: 31rem 20rem 40rem;
+
+    &__contacts {
+      padding-top: 21rem;
+    }
+
+    &__logo .logo__icon {
+      margin-top: -21rem;
+    }
+
+    &__top {
+      gap: 0 16rem;
+    }
+
+    &__container {
+      gap: 96rem 0;
+    }
+
+    &__socials {
+      gap: 25rem;
+
+      .socials__icon {
+        width: 20rem;
+      }
+    }
+
+    &__copyright {
+      margin-left: 14rem;
+      gap: 83rem;
+    }
+  }
+}
+
+@include md {
+  .footer {
+    padding: 20rem 10rem;
+    &__contacts {
+      .title {
+        font-size: 55rem;
+      }
+    }
+    &__copyright {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .navigation {
+      &__list {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@include sm {
+  .footer {
+    padding-top: 33rem;
+    &__logo {
+      .logo__icon {
+        width: 53rem;
+      }
+    }
+    &__container {
+      gap: 44rem 0;
+    }
+    &__contacts {
+      padding-left: 57rem;
+      .title {
+        font-size: 16rem;
+      }
+      .text {
+        &_large {
+          font-size: 16rem;
+        }
+      }
+    }
+    &__top {
+      // display: flex;
+      grid-gap:19rem 0;
+    }
+    &__socials {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      align-items: flex-start;
+    }
+    .navigation {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      // margin-top: -20rem;
+      padding-left: 0;
+      justify-content: center;
+      margin-left: -45rem;
+      &__list {
+        gap:14rem;
+        li {
+          width: 100%;
+        }
+      }
+    }
+    &__copyright {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      flex-direction: row;
+      padding-left: 9rem;
+      padding-top: 13rem;
+      gap: 41rem;
+      li {
+        gap: 15rem;
+        &:nth-child(1) {
+          order: 2;
+        }
+        &:nth-child(2) {
+          order: 1;
+        }
+      }
+    }
+    &__email {
+      padding-top: 8rem;
+    }
+    &__phone {
+      margin-top: -33rem;
+    }
+  }
+}

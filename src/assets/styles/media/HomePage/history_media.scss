@@ -1,0 +1,150 @@
+@include lg {
+  .history {
+    padding-top: 120rem;
+    padding-bottom: 120rem;
+
+    &__tabs-wrapper {
+      margin-top: -36rem;
+      padding-right: 82rem;
+    }
+
+    &__tabs-panel {
+      gap: 23rem 112rem;
+    }
+
+    &__tab-list {
+      padding: 0;
+    }
+
+    &__number {
+      margin-top: -2rem;
+      padding-right: 0;
+      letter-spacing: -5rem;
+    }
+
+    &__tab-list {
+      gap: 188.5rem;
+    }
+
+    &__img-container {
+      width: 520rem;
+      max-height: 346.949rem;
+    }
+
+    &__image {
+      width: 100%;
+      max-height: 346.949rem;
+    }
+
+    &__description {
+      width: 300rem;
+      margin-bottom: 0;
+      margin-left: 13rem;
+    }
+  }
+}
+
+@include md {
+  .history {
+    min-height: fit-content;
+    padding: 31rem 21rem 64rem;
+
+    &__tabs {
+      flex-direction: column;
+      gap: 68rem;
+      &-panel {
+        align-items: flex-start;
+        gap:5rem 0;
+      }
+
+      &-wrapper {
+        padding-bottom: 0;
+      }
+    }
+
+    &__tab {
+      &-list {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        gap: 10rem;
+      }
+      &-item {
+        &.text {
+          font-size: 18rem;
+        }
+      }
+    }
+
+    &__number {
+      @include font-number-small;
+      padding-right: 0;
+      grid-column: 2/3;
+      font-size: 160rem;
+      margin-top: 0;
+    }
+
+    &__description {
+      grid-column: 1/2;
+      grid-row: 2;
+      width: 255rem;
+    }
+
+    &__img-container {
+      grid-column: 2/3;
+      max-height: 242rem;
+    }
+  }
+}
+
+@include sm {
+  .history {
+    padding: 18rem 10rem 137rem;
+
+    &__tabs {
+      gap: 80rem;
+
+      &-wrapper {
+        width: 100%;
+      }
+    }
+
+    &__tabs-panel {
+      align-items: flex-start;
+      gap: 18rem;
+    }
+
+    &__number {
+      margin-top: 0;
+      text-align: left;
+      font-size: 60rem;
+      padding-left: 43rem;
+      grid-column: 1/3;
+      grid-row: 2/3;
+      letter-spacing: -0.6rem;
+    }
+
+    &__description {
+      padding-left: 42.5rem;
+      margin-left: 0;
+      // margin-top: -3rem;
+      width: fit-content;
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
+
+    &__img-container {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      max-height: 226.921rem;
+    }
+
+    &__image {
+      width: 100%;
+      height: auto;
+      max-height: 226.921rem;
+      object-fit: cover;
+    }
+  }
+}

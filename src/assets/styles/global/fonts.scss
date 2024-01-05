@@ -1,0 +1,49 @@
+//Gilroy
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('/fonts/gilroy/Gilroy-Bold.eot');
+  src: local('Gilroy'), local('Gilroy'),
+  url('/fonts/gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
+  url('/fonts/gilroy/Gilroy-Bold.woff') format('woff'),
+  url('/fonts/gilroy/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('/fonts/gilroy/Gilroy-Medium.eot');
+  src: local('Gilroy'), local('Gilroy'),
+  url('/fonts/gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/gilroy/Gilroy-Medium.woff2') format('woff2'),
+  url('/fonts/gilroy/Gilroy-Medium.woff') format('woff'),
+  url('/fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+//TT Hoves
+@font-face {
+  font-family: 'TT Hoves-DemiBold';
+  src: url('/fonts/tt_hoves/TTHoves-DemiBold.eot');
+  src: local('TT Hoves'), local('TT Hoves'),
+  url('/fonts/tt_hoves/TTHoves-DemiBold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/tt_hoves/TTHoves-DemiBold.woff2') format('woff2'),
+  url('/fonts/tt_hoves/TTHoves-DemiBold.woff') format('woff'),
+  url('/fonts/tt_hoves/TTHoves-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves-Regular';
+  src: url('/fonts/tt_hoves/TTHoves-Regular.eot');
+  src: local('TT Hoves'), local('TT Hoves'),
+  url('/fonts/tt_hoves/TTHoves-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/tt_hoves/TTHoves-Regular.woff2') format('woff2'),
+  url('/fonts/tt_hoves/TTHoves-Regular.woff') format('woff'),
+  url('/fonts/tt_hoves/TTHoves-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

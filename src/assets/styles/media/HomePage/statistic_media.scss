@@ -1,0 +1,159 @@
+@include lg {
+  .statistic {
+
+    &__container {
+      padding: 105rem 0 132rem;
+    }
+
+    &__content {
+      &:last-child {
+        padding: 58.5rem 0 0 322rem;
+        gap: 75.5rem;
+      }
+
+      .item {
+        &__container_number {
+          top: 33rem;
+          left: 0;
+        }
+
+        &__wrapper {
+          gap: 8rem;
+        }
+      }
+
+      .item .text {
+        max-width: 186rem;
+        margin-top: -10rem;
+      }
+
+      .content {
+        &__number_large {
+          line-height: 100%;
+          margin-top: 0;
+        }
+
+        // &__subtitle {
+        //   bottom: 42rem;
+        //   position: relative;
+        // }
+      }
+    }
+  }
+}
+
+@include md {
+  .statistic {
+    min-height: fit-content;
+    padding: 73rem 30rem 78rem;
+
+    &__container {
+      flex-direction: column;
+      align-items: stretch;
+      color: var(--color-white);
+    }
+
+    &__content {
+      align-items: center;
+      width: 100%;
+
+      &:last-child {
+        justify-content: space-between;
+        padding: 0;
+        flex-direction: row;
+      }
+
+      .item {
+
+        &__wrapper {
+
+          .number_small {
+            font-size: 100rem;
+
+            &:first-child {
+              padding-top: 24rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include sm {
+  .statistic {
+    padding: 10rem 10rem 95rem;
+
+    &__container {
+      gap: 38rem;
+    }
+
+    &__content {
+      &:last-child {
+        flex-direction: column;
+        gap: 26rem;
+      }
+
+      .content {
+        &__number_large {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-end;
+          margin-top: 0;
+          width: 100%;
+          gap: 26rem;
+          padding-right: 17rem;
+        }
+
+        &__subtitle {
+          position: static;
+          font-size: 16rem;
+          margin-bottom:41rem;
+          line-height: 110%;
+        }
+      }
+
+      .item {
+        flex-direction: row;
+        align-items: flex-end;
+
+        &__container {
+          width: 100%;
+
+          &_number {
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+          }
+        }
+
+        &__wrapper {
+          gap: 0;
+
+          .number_small {
+            font-size: 60rem;
+
+            &:first-child {
+              padding-top: 29rem;
+              font-size: 90rem;
+            }
+          }
+        }
+
+        .text {
+          line-height: 110%;
+          max-width: fit-content;
+          padding-left: 0;
+          padding-bottom: 12rem;
+        }
+
+        &__sup {
+          font-size: 60rem;
+          margin-left: -10rem;
+        }
+      }
+    }
+  }
+}

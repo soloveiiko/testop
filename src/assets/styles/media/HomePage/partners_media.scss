@@ -1,0 +1,125 @@
+@include lg {
+  .partners {
+    
+    swiper-slide {
+      width: 360.666rem;
+      height: 360.666rem;
+    }
+  }
+  
+  .partners-slider {
+    padding-top: 279rem;
+    padding-bottom: 300rem;
+    
+    &__headline {
+      margin-top: -50rem;
+    }
+    
+    &__item {
+      width: 360.666rem;
+      min-width: 360.666rem;
+      height: 360.666rem;
+    }
+    
+    &__img-container {
+      height: 110rem;
+    }
+    
+    &__list {
+      margin-top: -82rem;
+      gap: 61rem;
+    }
+  }
+}
+
+@include md {
+  .partners {
+    width: 100%;
+    
+    &-slider {
+      justify-content: flex-start;
+      width: 100%;
+      min-height: fit-content;
+      padding-top: 158rem;
+      padding-bottom: 120rem;
+      
+      &__headline {
+        margin-top: -13rem;
+      }
+      
+      &__img-container {
+        height: 69rem;
+      }
+      
+      &__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: -32rem;
+        gap: 30rem;
+      }
+      
+      &__item {
+        align-items: center;
+        flex-shrink: 0;
+        justify-content: center;
+        width: 200rem;
+        min-width: 200rem;
+        height: 200rem;
+        border-radius: 50%;
+        background: rgba(227, 227, 227, 0.5);
+        backdrop-filter: blur(5rem);
+        padding: 30rem;
+      }
+      
+      swiper-slide {
+        align-items: center;
+        flex-shrink: 0;
+        justify-content: center;
+        width: 200rem;
+        height: 200rem;
+      }
+      
+      swiper-container {
+        display: flex;
+        width: 100%;
+      }
+      
+      swiper-container::part(wrapper) {
+        transition-timing-function: linear;
+      }
+    }
+  }
+}
+
+@include sm {
+  .partners {
+    width: 100%;
+    
+    &-slider {
+      padding-top: 131rem;
+      padding-bottom: 140rem;
+      
+      &__img-container {
+        height: 50rem;
+      }
+      
+      &__list {
+        margin-top: -18rem;
+        gap: 20rem;
+      }
+      
+      &__item {
+        width: 160rem;
+        min-width: 160rem;
+        height: 160rem;
+        padding: 30rem;
+      }
+      
+      swiper-slide {
+        width: 160rem;
+        height: 160rem;
+      }
+    }
+  }
+}

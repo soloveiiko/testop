@@ -1,0 +1,25 @@
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(227, 227, 227, 0.5);
+  backdrop-filter: blur(5rem);
+  z-index: 1000;
+  transition: var(--transition);
+  &__progress {
+    width: 100rem;
+    height: 100rem;
+    stroke: var(--color-yellow);
+  }
+}

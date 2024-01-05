@@ -1,0 +1,50 @@
+{
+    "Navigation": {
+        "about": "Про нас",
+        "catalog": "Каталог",
+        "vacancy": "Вакансії",
+        "contact": "Контакти"
+    },
+    "Footer":{
+        "privacy_policy": "Політика конфіденційності",
+        "public_offering": "Публічна оферта",
+        "copyright": "Всі права захищені"
+    },
+    "Buttons":{
+        "more": "Більше",
+        "less": "Менше",
+        "more_about": "більше про компанію",
+        "watch": "Переглянути",
+        "order": "Замовити",
+        "wait_for_call": "Чекаю дзвінка",
+        "respond": "Відгукнутися",
+        "view_vacancies": "Переглянути вакансії",
+        "become_partner": "Стати партнером"
+    },
+    "Search":{
+        "button":"Пошук",
+        "results": "Результати пошуку",
+        "placeholder":"Шукати м’ясо, рибу або інші товари",
+        "clean": "Очистити"
+    },
+    "Partnership":{
+        "become_partner": "Стати партнером"
+    },
+    "Form":{
+        "text":"Залиште свої контактні дані, і протягом 24 годин наш спеціаліст зв’яжеться з вами",
+        "name": "Ім’я",
+        "phone": "Телефон"
+    },
+    "HomePage":{
+        "catalog_title": "Каталог",
+        "top_management_title": "Топ-менеджмент",
+        "partners_title": "Партнери"
+    },
+    "AboutPage":{
+        "join_us": "Приєднуйся"
+    },
+    "CatalogPage":{
+        "title": "Каталог",
+        "products": "товарів"
+    }
+}

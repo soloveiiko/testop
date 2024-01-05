@@ -1,0 +1,153 @@
+@mixin container_vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin container_horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin font_headline {
+  font-family: "Gilroy-Bold", serif;
+  font-size: 200rem;
+  line-height: 100%;
+}
+
+@mixin font_title {
+  font-family: "Gilroy-Bold", serif;
+  font-size: 90rem;
+  line-height: 95%;
+}
+
+@mixin font_subtitle {
+  font-family: "Gilroy-Bold", serif;
+  font-size: 60rem;
+  line-height: 100%;
+}
+
+@mixin font_text {
+  font-family: "Gilroy-Medium", serif;
+  font-size: 16rem;
+  line-height: 115%;
+}
+
+@mixin font_text_small {
+  font-family: "Gilroy-Medium", serif;
+  font-size: 12rem;
+  line-height: 115%;
+}
+
+@mixin font_text_large {
+  font-family: "Gilroy-Medium", serif;
+  font-size: 32rem;
+  line-height: 115%;
+}
+@mixin font_text_error {
+  font-family: "Gilroy-Medium", serif;
+  font-size: 12rem;
+  line-height: 115%;
+  color: var(--color-error);
+  margin-top: 4px;
+}
+
+@mixin font_text_large_bold {
+  font-family: "Gilroy-Bold", serif;
+  font-size: 32rem;
+  line-height: 100%;
+}
+
+@mixin font_number {
+  font-family: "Gilroy-Bold", serif;
+  font-size: 400rem;
+  line-height: 100%;
+}
+
+@mixin font_number_small {
+  font-family: "Gilroy-Bold", serif;
+  font-size: 140rem;
+  line-height: 100%;
+}
+
+@mixin font_number_large {
+  font-family: "Gilroy-Bold", serif;
+  font-size: 650rem;
+  line-height: 100%;
+}
+
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35rem;
+  border: none;
+  background-color: var(--color-white);
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+@mixin button_white {
+  @include button;
+  gap: 8rem;
+  padding: 13rem 24rem;
+  border: 1rem solid var(--color-darkgray);
+}
+
+@mixin button_white_hover {
+  border-color: var(--color-yellow);
+  background-color: var(--color-yellow);
+}
+
+@mixin button_yellow {
+  @include button;
+  background-color: var(--color-yellow);
+  padding: 14.8rem 24rem;
+}
+
+@mixin button_yellow_hover {
+  color: var(--color-white);
+}
+
+@mixin button_circle_small {
+  @include button;
+  border: 1rem solid var(--color-darkgray);
+  padding: 15rem;
+}
+
+@mixin button_circle_large {
+  border-right: 50rem;
+  padding: 14rem;
+}
+
+@mixin input {
+  padding: 10rem 0;
+  border: none;
+  border-bottom: 1rem solid var(--color-silver);
+  color: var(--color-darkgray);
+}
+
+@mixin transparency_effect {
+  background: rgba(227, 227, 227, 0.5);
+  backdrop-filter: blur(5rem);
+}
+
+@mixin sm {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 1441px) {
+    @content;
+  }
+}

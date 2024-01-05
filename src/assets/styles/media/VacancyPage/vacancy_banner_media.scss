@@ -1,0 +1,58 @@
+@include lg {
+  .vacancy-banner {
+    &__container {
+      gap: 200rem;
+      padding: 278rem 0 0;
+    }
+    .content {
+      &__text {
+        padding-top: 30rem;
+        gap: 22rem;
+      }
+    }
+  }
+}
+@include md {
+  .vacancy {
+    gap: 65rem;
+    &-banner {
+      &__container {
+        gap: 65rem;
+        padding: 159rem 0 0;
+      }
+      .content {
+        // &__text {
+        //     padding-top: 30rem;
+        //     gap: 22rem;
+        // }
+      }
+    }
+  }
+}
+
+@include sm {
+  .vacancy {
+    gap: 41rem;
+    padding-bottom: 117rem;
+    &-banner {
+      &__container {
+        padding: 123rem 0 0;
+        gap: 37rem;
+      }
+      .content {
+        flex-direction: column;
+        gap: 10rem;
+        &__text {
+          max-width: 100%;
+        }
+      }
+      &__img {
+        min-height: 206rem;
+      }
+      &__content {
+        flex-direction: column;
+        gap: 10rem;
+      }
+    }
+  }
+}

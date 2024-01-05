@@ -1,0 +1,178 @@
+.button {
+  &__text {
+    white-space: nowrap;
+  }
+
+  &_white
+   {
+    @include button_white;
+
+    &:hover,&.active {
+      @include button_white_hover;
+    }
+  }
+
+  &_yellow {
+    @include button_yellow;
+
+    &:hover {
+      @include button_yellow_hover;
+    }
+  }
+
+  &_dropdown {
+    @include button;
+    border: 1rem solid var(--color-darkgray);
+    gap: 6rem;
+
+    .button__icon,
+    .button__image {
+      width: 18rem;
+      height: 18rem;
+      transition: var(--transition);
+      transform: rotate(180deg);
+      stroke-width: 0.1rem;
+    }
+
+    &:hover {
+      border-color: var(--color-gray);
+      // transition: var(--transition);
+      // .button__icon, .button__image {
+      //   transform: rotate(0deg);
+      // }
+    }
+
+    &_checked {
+      border-color: var(--color-gray);
+
+      .button__icon,
+      .button__image {
+        transform: rotate(0deg);
+      }
+
+      &:hover {
+        .button__icon,
+        .button__image {
+          transform: rotate(0);
+        }
+      }
+    }
+  }
+
+  &_icon-right,
+  &_icon-left {
+    display: flex;
+    padding: 4rem 26rem;
+  }
+
+  &_icon-left {
+    flex-direction: row-reverse;
+  }
+
+  &_icon-right {
+    padding: 13.8rem 20rem 13.8rem 24rem;
+  }
+
+  &_circle-small {
+    @include button_circle_small;
+    width: 51rem;
+    height: 51rem;
+    padding: 0;
+
+    span {
+      padding-top: 5rem;
+    }
+  }
+
+  &_circle-large {
+    padding: 15rem;
+    border-radius: 50rem;
+    svg {
+      stroke: none;
+    }
+  }
+
+  &_close {
+    @include button;
+    padding: 14rem;
+
+    &_border {
+      .button__icon,
+      .button__image {
+        width: 16rem;
+        height: 16rem;
+      }
+    }
+  }
+
+  &_close,
+  &_down {
+    .button__icon,
+    .button__image {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  &_down {
+    padding: 13rem;
+    transform: rotate(180deg);
+    svg {
+      stroke: none;
+    }
+  }
+
+  &_next {
+    .button__icon {
+      transform: rotate(90deg);
+    }
+  }
+
+  &_prev {
+    .button__icon {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &_next,
+  &_prev {
+    .button__icon,
+    .button__image {
+      width: 24rem;
+      height: 24rem;
+    }
+
+    &:hover {
+      .button__icon {
+        fill: var(--color-white);
+        stroke: var(--color-white);
+        stroke-width: 0.1rem;
+      }
+    }
+  }
+
+  &:disabled {
+    color: var(--color-black);
+    // border: 1rem solid var(--color-lightgray);
+    background-color: var(--color-lightgray);
+
+    &:hover {
+      cursor: not-allowed;
+      // color: var(--color-black);
+      // border: 1rem solid var(--color-lightgray);
+      // background-color: var(--color-lightgray);
+      // fill: var(--color-black);
+    }
+  }
+
+  &__icon {
+    fill: var(--color-black);
+    stroke: var(--color-black);
+  }
+
+  &__image {
+    width: 38rem;
+    height: 38rem;
+    object-fit: cover;
+  }
+}

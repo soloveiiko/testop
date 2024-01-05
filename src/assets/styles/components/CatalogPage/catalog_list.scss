@@ -1,0 +1,144 @@
+.catalog-list {
+  width: 925rem;
+  margin: 60rem 0 177rem;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  gap: 60rem;
+  
+  & > *:not(:first-child) {
+    padding-top: 58rem;
+    border-top: 1rem solid var(--color-silver);
+  }
+}
+
+.catalog-item {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  margin: 0 30rem;
+  gap: 0 40rem;
+  grid-template-columns: calc(50% - 40rem) 50%;
+  
+  .product-slider, .catalog-item__default-container {
+    transition: opacity .3s ease-in-out;
+  }
+  
+  &.collapsed {
+    height: 100%;
+    
+    .catalog-item {
+
+      
+      
+      &__img-container {
+        opacity: 0;
+      }
+    }
+    
+    .product-slider, .catalog-item__default-container {
+      width: 928rem;
+      height: 610rem;
+      opacity: 1;
+    }
+  }
+  
+  &.expanded {
+    .product-slider, .catalog-item__default-container {
+      opacity: 0;
+    }
+    
+    .catalog-item {
+      
+      &__img-container {
+        opacity: 1;
+      }
+    }
+  }
+  
+  &_top {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    gap: 19rem;
+  }
+  
+  &__code {
+    color: var(--color-gray);
+  }
+  
+  &__subtitle {
+    line-height: 91%;
+    flex-grow: 1;
+    // width: 345rem;
+    width: 50%;
+    min-height: 200rem;
+  }
+  
+  &__img-container {
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 467rem;
+    height: 305rem;
+    transition: opacity .3s ease-in-out;
+  }
+  
+  
+  &__default-container {
+    width: 928rem;
+    height: 610rem;
+  }
+  
+  &__image, &__default-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  &__btn-container {
+    justify-content: flex-start;
+    gap: 8rem;
+    .button {
+      &_dropdown {
+        width: 139rem;
+        height: 48rem;
+      }
+      &_yellow {
+        height: 48rem;
+      }
+    }
+  }
+  
+  &__more-information {
+    display: flex;
+    overflow: hidden;
+    height: 0;
+    margin: 0 -30rem;
+    gap: 38rem;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    
+    & > *:first-child {
+      margin-top: 60rem;
+    }
+  }
+  
+  &__information {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 30rem;
+    gap: 28rem 21rem;
+  }
+  
+  &__container {
+    align-items: flex-start;
+    width: calc(50% - 20rem);
+    gap: 6rem;
+  }
+  
+  &__title {
+    color: var(--color-gray);
+  }
+}

@@ -1,0 +1,71 @@
+.socials {
+  width: 100%;
+  // min-height: 100vh;
+
+  &__container {
+    padding: 200rem 0 200rem;
+    width: 100%;
+    justify-content: center;
+
+    .text_large {
+      display: block;
+      color: var(--color-gray);
+      line-height: 90%;
+      margin-bottom: -9rem;
+    }
+  }
+
+  &__buttons {
+    justify-content: center;
+    gap: 60rem;
+    margin-top: -65rem;
+    animation: linear infinite alternate;
+    animation-name: socialsBlockAnimation;
+    animation-duration: 1.5s;
+  }
+
+  &__link {
+    border-radius: 50%;
+  }
+
+  &__card {
+    justify-content: center;
+    flex-shrink: 0;
+    width: 300rem;
+    min-width: 300rem;
+    max-width: 300rem;
+    height: 300rem;
+    border-radius: 50%;
+    background: rgba(227, 227, 227, 0.5);
+    backdrop-filter: blur(5rem);
+
+    &:hover {
+      .socials__icon {
+        fill: var(--color-yellow);
+        // transform: scale(2);
+      }
+    }
+  }
+
+  &__icon {
+    width: 24rem;
+    height: auto;
+    fill: var(--color-black);
+    transition: var(--transition);
+    overflow: visible;
+  }
+  &__headline {
+    padding-top: 16rem;
+  }
+}
+@keyframes socialsBlockAnimation {
+  0% {
+    transform: translateX(-20rem);
+  }
+  50% {
+    transform: translateX(0rem);
+  }
+  100% {
+    transform: translateX(20rem);
+  }
+}

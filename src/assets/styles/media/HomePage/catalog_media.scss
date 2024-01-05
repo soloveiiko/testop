@@ -1,0 +1,89 @@
+@include lg {
+  .catalog-section {
+    
+    &__container {
+      top: calc(100vh / 2 - 569rem);
+      padding-top: 404rem;
+    }
+    
+    &__item {
+      width: 320rem;
+      height: 320rem;
+      padding: 26rem 27rem 28rem;
+    }
+    
+    &__headline {
+      margin-top: -75rem;
+    }
+    
+    &__list {
+      margin-top: -80rem;
+      gap: 26.6rem;
+    }
+    
+    &__image {
+      width: 186.6rem;
+      height: 186.6rem;
+      object-fit: contain;
+    }
+    
+    &__button {
+      margin-top: 53rem;
+      
+      .button_yellow {
+        padding: 17rem 25rem;
+      }
+    }
+  }
+}
+
+@include md {
+  .catalog-section {
+    
+    &__container {
+      top: calc(100vh / 2 - 389rem);
+    }
+    
+    &__list {
+      margin-top: -32rem;
+      gap: 10rem;
+    }
+  }
+}
+
+@include sm {
+  .catalog-section {
+    &__container {
+      top: calc(100vh / 2 - 206rem);
+      padding-top: 108rem;
+      padding-bottom: 100rem;
+    }
+    
+    &__list {
+      margin-top: -16rem;
+      gap: 12rem;
+    }
+    
+    &__item {
+      width: 140rem;
+      height: 140rem;
+      padding: 12rem 10rem 12rem;
+      border-radius: 11.667rem;
+    }
+    
+    &__image {
+      width: 81.6rem;
+      height: 81.6rem;
+    }
+    
+    &__button {
+      margin-top: 30rem;
+      padding: 0 10rem;
+      
+      .button_yellow {
+        width: 100%;
+        padding: 17.5rem 31rem;
+      }
+    }
+  }
+}

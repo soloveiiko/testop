@@ -1,0 +1,18 @@
+.search-button {
+  align-self: end;
+  margin-bottom: 60rem;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  
+  &_gap {
+    padding: 13.8rem 20rem 13.8rem 19rem;
+    gap: 52rem;
+  }
+  
+  &_icon {
+    width: 16rem;
+    height: 16rem;
+    stroke-width: 0.1rem;
+    stroke: var(--color-black);
+  }
+}

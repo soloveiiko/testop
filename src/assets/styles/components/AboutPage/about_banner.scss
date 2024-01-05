@@ -1,0 +1,21 @@
+.about-banner {
+  width: 100%;
+  justify-content: center;
+  padding: 80rem 0 0;
+
+  &__container {
+    padding: 162rem 0 10rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__headline {
+    color: var(--color-yellow);
+  }
+
+  &__img {
+    margin-top: -129rem;
+    width: 100%;
+    height: auto;
+  }
+}

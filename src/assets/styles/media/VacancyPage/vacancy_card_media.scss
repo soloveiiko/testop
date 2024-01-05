@@ -1,0 +1,54 @@
+@include lg {
+  .vacancy-card {
+    gap: 80rem;
+    align-items: center;
+
+    &__content {
+      width: 100%;
+      .content {
+        &__container {
+          gap: 34rem;
+          width: 630rem;
+          &:first-child {
+            padding-top: 27rem;
+            padding-left: 0;
+          }
+
+          .subtitle {
+            font-size: 80rem;
+          }
+        }
+      }
+    }
+
+    &__divider {
+      width: 1238.667rem;
+    }
+  }
+}
+
+@include sm {
+  .vacancy {
+    &-card {
+      gap: 40rem;
+      &__content {
+        flex-direction: column;
+        gap: 19rem;
+        .button {
+          &_yellow {
+            width: 100%;
+          }
+        }
+        .content {
+          &__container {
+            max-width: 100%;
+            gap: 22rem;
+            .subtitle {
+              font-size: 32rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

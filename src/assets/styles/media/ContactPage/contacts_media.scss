@@ -1,0 +1,115 @@
+@include lg {
+  .contacts {
+    &__container {
+      padding: 0 0 58rem;
+      gap: 153rem 0;
+    }
+
+    &__email {
+      .email {
+        font-size: 222.925rem;
+        // margin-top: -18rem;
+      }
+    }
+
+    &__content {
+      gap: 29rem;
+
+      &_adress {
+        padding-top: 31rem;
+        gap: 74rem;
+      }
+    }
+
+    &__adress {
+      gap: 74rem;
+
+      .adress__item {
+        gap: 26rem;
+      }
+    }
+  }
+}
+
+@include md {
+  .contacts {
+    min-height: fit-content;
+
+    &__container {
+      padding: 0 0 58rem;
+      display: flex;
+      // flex-direction: column;
+      align-items: flex-start;
+      gap: 35rem 0;
+    }
+
+    &__email {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18rem;
+
+      .email {
+        @include font-subtitle;
+        margin-top: 0rem;
+      }
+    }
+
+    &__content {
+      gap: 18rem;
+
+      &_adress {
+        gap: 28rem;
+      }
+    }
+
+    &__adress {
+      gap: 40rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      .adress__item {
+        gap: 16rem;
+      }
+    }
+  }
+}
+
+@include sm {
+  .contacts {
+    &__container {
+      gap: 38rem 0;
+    }
+    &__email {
+      gap: 10rem;
+      .email {
+        font-size: 32rem;
+      }
+    }
+    &__phone {
+      gap: 14rem;
+      .phone {
+        font-size: 32rem;
+      }
+    }
+    &__content {
+      &_adress {
+        padding-top: 44rem;
+      }
+    }
+    &__adress {
+      gap: 38rem;
+      .adress__item {
+        gap: 12rem;
+        .item {
+          &__city {
+            font-size: 32rem;
+          }
+          &__adress {
+            font-size: 16rem;
+          }
+        }
+      }
+    }
+  }
+}

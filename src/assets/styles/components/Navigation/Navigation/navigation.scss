@@ -1,0 +1,17 @@
+.navigation {
+  justify-content: flex-start;
+
+  &__list {
+    justify-content: flex-start;
+    gap: 28.5rem;
+
+    a {
+      transition: var(--transition);
+      &:hover,
+      &.active {
+        color: var(--color-yellow);
+        transition: .3s;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@include lg {
+  .navigation {
+    &__list {
+      gap: 40.5rem;
+    }
+  }
+}
+@include md {
+  // .navigation {
+  //   &__list {
+  //     flex-direction: column;
+  //   }
+  // }
+}

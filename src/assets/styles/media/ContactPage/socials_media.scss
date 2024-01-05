@@ -1,0 +1,96 @@
+@include lg {
+  .socials {
+    width: 100%;
+    // min-height: 100vh;
+
+    &__container {
+      padding: 344rem 0 400rem;
+
+      .text_large {
+        margin-bottom: -38rem;
+      }
+    }
+
+    &__buttons {
+      margin-top: -81rem;
+    }
+
+    &__card {
+      width: 360.667rem;
+      min-width: 360.667rem;
+      max-width: 360.667rem;
+      height: 360.667rem;
+    }
+
+    &__icon {
+      width: 28.853rem;
+    }
+    &__headline {
+      padding-top: 21rem;
+    }
+  }
+}
+
+@include md {
+  .socials {
+    min-height: fit-content;
+    &__container {
+      padding: 134rem 0 140rem;
+    }
+    &__headline {
+      @include font-title;
+    }
+
+    &__buttons {
+      gap: 30rem;
+      margin-top: -25rem;
+    }
+
+    &__card {
+      width: 150rem;
+      min-width: 150rem;
+      max-width: 150rem;
+      height: 150rem;
+
+      &:hover {
+        .socials__icon {
+          transform: scale(1.5);
+        }
+      }
+    }
+
+    &__icon {
+      width: 24rem;
+      height: auto;
+      fill: var(--color-black);
+      transition: var(--transition);
+      overflow: visible;
+    }
+  }
+}
+
+@include sm {
+  .socials {
+    &__buttons {
+      gap: 5rem;
+      margin-top: -20rem;
+      animation: none;
+    }
+    &__container {
+      padding: 75rem 0 143rem;
+    }
+    &__headline {
+      font-size: 60rem;
+      padding-top: 11rem;
+    }
+    &__card {
+      width: 115rem;
+    min-width: 115rem;
+    max-width: 11rem;
+    height: 115rem;
+    }
+    &__icon {
+      width: 16rem;
+    }
+  }
+}

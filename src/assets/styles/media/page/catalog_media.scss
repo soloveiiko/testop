@@ -1,0 +1,52 @@
+@include lg {
+  .catalog {
+    padding: 199rem 20rem 0;
+    grid-template-columns: 238rem calc(100% - 298rem);
+  }
+}
+
+@include md {
+  .catalog {
+    padding-top: 160rem;
+    column-gap: 50rem;
+    grid-template-columns: 170rem calc(100% - 220rem);
+  }
+}
+
+@include sm {
+  .catalog {
+    position: relative;
+    overflow: hidden;
+    padding-top: 120rem;
+    gap: 29rem 8rem;
+    grid-template-columns: 4fr 1fr 1fr;
+    
+    &__title {
+      margin: 0 0 0 10rem;
+      padding-top: 3rem;
+      grid-column: 1/2;
+    }
+    
+    .filter-button {
+      position: relative;
+      display: block;
+      margin-right: 10rem;
+      
+      &::after {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 12rem;
+        height: 12rem;
+        content: '';
+        border-radius: 50%;
+        background-color: var(--color-yellow);
+      }
+    }
+    
+    .partnership {
+      margin-top: 114rem;
+      grid-column: 1/4;
+    }
+  }
+}

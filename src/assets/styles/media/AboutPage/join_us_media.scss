@@ -1,0 +1,38 @@
+@include lg {
+  .about {
+    .join-us {
+      &__container {
+        padding: 349rem 0 400rem;
+        gap: 55rem;
+
+        .button_yellow {
+          padding: 18rem 25rem;
+        }
+      }
+    }
+  }
+}
+@include md {
+  .about {
+    .join-us {
+      &__container {
+        padding: 134rem 0 140rem;
+        gap: 55rem;
+      }
+    }
+  }
+}
+
+@include sm {
+  .about {
+    .join-us {
+      &__container {
+        gap: 25rem;
+        padding: 73rem 0 143rem;
+      }
+      &__headline {
+        font-size: 60rem;
+      }
+    }
+  }
+}

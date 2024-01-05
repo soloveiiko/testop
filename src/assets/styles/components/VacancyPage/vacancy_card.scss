@@ -1,0 +1,41 @@
+.vacancy-card {
+    gap: 58rem;
+    align-items: stretch;
+
+    &__content {
+        align-items: flex-start;
+
+        .content {
+            &__container {
+                align-items: flex-start;
+                justify-content: flex-start;
+                // flex: 1;
+                max-width: 50%;
+                width: 467rem;
+
+                gap: 31rem;
+
+                &:first-child{
+                    padding-top: 18rem;
+                    padding-left: 2rem;
+                }
+
+                .subtitle {
+                    font-size: 59.7rem;
+                }
+            }
+
+            &__number {
+                display: block;
+                color: var(--color-gray);
+            }
+        }
+    }
+
+    &__divider {
+        width: 100%;
+        margin: 0;
+        border:1rem solid var(--color-silver);
+    }
+
+}

@@ -1,0 +1,13 @@
+.test-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440rem;
+  margin: 0 auto;
+  padding: 100rem 30rem;
+  gap: 30rem;
+}
+.circle-buttons {
+  display: flex;
+  gap: 20rem;
+}

@@ -1,0 +1,158 @@
+@include lg {
+  
+  html {
+    font-size: calc(1vw / 19.2);
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1920rem;
+    
+    &_outer {
+      padding: 0 20rem;
+    }
+    
+    &_animated {
+      overflow: hidden;
+      
+      &_headline {
+        margin-bottom: -18rem;
+        padding-bottom: 18rem;
+      }
+      
+      &_title {
+        margin-bottom: -15rem;
+        padding-bottom: 15rem;
+      }
+      
+      &_subtitle {
+        margin-bottom: -9rem;
+        padding-bottom: 9rem;
+      }
+      
+      &_text {
+        margin-bottom: -1rem;
+        padding-bottom: 1rem;
+        
+        &_large {
+          margin-bottom: -3rem;
+          padding-bottom: 3rem;
+        }
+      }
+    }
+  }
+  
+  .headline {
+    font-size: 260rem;
+  }
+  
+  .title {
+    font-size: 120rem;
+  }
+  
+  .subtitle {
+    font-size: 80rem;
+  }
+  
+  .text {
+    font-size: 18rem;
+    
+    &_small {
+      font-size: 14rem;
+    }
+    
+    &_large {
+      font-size: 40rem;
+      
+      &_bold {
+        font-size: 40rem;
+      }
+    }
+  }
+  
+  .number {
+    font-size: 475rem;
+    // font-size: 520rem;
+    
+    &_small {
+      font-size: 180rem;
+    }
+    
+    &_large {
+      font-size: 860rem;
+    }
+  }
+}
+
+@include md {
+  html {
+    font-size: calc(1vw / 7.68);
+    min-height: 100vh;
+  }
+  
+  .container {
+    // width: 100%;
+    // max-width: 748rem;
+    max-width: 100%;
+    
+    &_outer {
+      padding: 0 10rem;
+    }
+  }
+  .headline {
+    font-size: 125rem;
+  }
+}
+
+@include sm {
+  html {
+    font-size: calc(1vw / 3.6);
+    min-height: 100vh;
+  }
+  main {
+    // display: none!important;
+  }
+  
+  .headline {
+    font-size: 60rem;
+  }
+  
+  .title {
+    font-size: 48rem;
+  }
+  
+  .subtitle {
+    font-size: 32rem;
+  }
+  
+  .text {
+    &_large {
+      font-size: 16rem;
+      
+      &_bold {
+        font-size: 18.667rem;
+      }
+    }
+  }
+  
+  .number {
+    font-size: 140rem;
+    
+    &_small {
+      font-size: 90rem;
+    }
+    
+    &_large {
+      font-size: 200rem;
+    }
+  }
+  
+  .desktop-el {
+    display: none;
+  }
+  
+  .mobile-el {
+    display: block;
+  }
+}

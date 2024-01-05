@@ -1,0 +1,169 @@
+html {
+  font-size: calc(1vw / 14.4);
+  min-height: 100vh;
+}
+
+/* @media (min-width: 1280px) and (max-width: 1440px) {
+  html {
+    font-size: calc(1vw / 14.4);
+  }
+}
+
+@media (min-width: 1441px) {
+  html {
+    font-size: 1px;
+  }
+} */
+
+body {
+  position: relative;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1380rem;
+
+  &_horizontal {
+    @include container_horizontal;
+  }
+
+  &_vertical {
+    @include container_vertical;
+  }
+
+  &_outer {
+    width: 100%;
+    justify-content: center;
+    padding: 0 30rem;
+  }
+
+  &_black {
+    width: 100%;
+    background: var(--color-black);
+  }
+
+  &_animated {
+    overflow: hidden;
+
+    &_headline {
+      padding-bottom: 15rem;
+      margin-bottom: -15rem;
+    }
+
+    &_title {
+      padding-bottom: 10rem;
+      margin-bottom: -10rem;
+    }
+
+    &_subtitle {
+      padding-bottom: 5rem;
+      margin-bottom: -5rem;
+    }
+
+    &_text {
+      padding-bottom: 1rem;
+      margin-bottom: -1rem;
+
+      &_large {
+        padding-bottom: 3rem;
+        margin-bottom: -3rem;
+      }
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* pointer-events: none; */
+  background: rgba(227, 227, 227, 0.5);
+  backdrop-filter: blur(5rem);
+  z-index: 11;
+  transition: all 0.2s ease-in-out;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.headline {
+  @include font_headline;
+}
+
+.title {
+  @include font_title;
+}
+
+.subtitle {
+  @include font_subtitle;
+}
+
+.text {
+  @include font_text;
+
+  &_small {
+    @include font_text_small;
+  }
+
+  &_large {
+    @include font_text_large;
+
+    &_bold {
+      @include font_text_large_bold;
+    }
+  }
+  &__error {
+    @include font_text_error;
+  }
+}
+
+.number {
+  @include font_number;
+
+  &_small {
+    @include font_number_small;
+  }
+
+  &_large {
+    @include font_number_large;
+  }
+}
+
+.circle-button {
+  &_small {
+    @include button_circle_small;
+  }
+
+  &_large {
+    @include button_circle_large;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  @include font_text_small;
+}
+
+.mobile-el {
+  display: none;
+}

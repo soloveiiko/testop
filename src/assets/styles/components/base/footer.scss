@@ -1,0 +1,121 @@
+.footer {
+  width: 100%;
+  padding: 31rem 30rem 40rem;
+  transition: all 0.1s ease-in-out;
+  color: var(--color-silver);
+  background: var(--color-black);
+  
+  a {
+    transition: all 0.1s ease-in-out;
+    color: var(--color-silver);
+    
+    &:hover {
+      color: var(--color-yellow);
+    }
+  }
+  
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 62rem 0;
+  }
+  
+  &__top {
+    display: grid;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-template-columns: subgrid;
+    gap: 19rem 6rem;
+    
+  }
+  
+  &__contacts {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  
+  &__logo {
+    .logo__icon {
+      justify-content: flex-start;
+      width: 79rem;
+      height: auto;
+      padding-top: 5rem;
+      fill: var(--color-white);
+    }
+  }
+  
+  &__socials {
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 20rem;
+    
+    .socials__icon {
+      overflow: visible;
+      width: 16rem;
+      height: auto;
+      transition: var(--transition);
+      fill: var(--color-silver);
+      
+      &:hover {
+        fill: var(--color-yellow);
+      }
+    }
+  }
+  
+  .navigation {
+    align-items: flex-end;
+    padding-left: 9rem;
+  }
+  
+  &__copyright {
+    justify-content: flex-start;
+    margin-left: -7rem;
+    gap: 46rem;
+    
+    li {
+      align-items: flex-start;
+      gap: 7rem;
+      
+      &:last-child {
+        color: var(--color-gray);
+      }
+    }
+  }
+  
+  &_white {
+    color: var(--color-black);
+    background: var(--color-white);
+    
+    a {
+      color: var(--color-black);
+    }
+    
+    .footer {
+      &__logo {
+        .logo__icon {
+          fill: var(--color-black);
+        }
+      }
+      
+      &__socials {
+        .socials__icon {
+          fill: var(--color-black);
+          
+          &:hover {
+            fill: var(--color-yellow);
+          }
+        }
+      }
+      
+      &__copyright {
+        li {
+          &:last-child {
+            color: var(--color-black);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@include md {
+  .search-modal {
+    &__container {
+      width: calc(100% - 20rem);
+    }
+  }
+}
+
+@include sm {
+  .search-modal {
+    padding-top: 16rem;
+    
+    &__container {
+      width: calc(100% - 20rem);
+      gap: 60rem;
+    }
+    
+    .search-field {
+      &__input {
+        padding: 16rem 45rem 13rem 24rem;
+      }
+      
+      &__icon {
+        right: 18rem;
+      }
+      
+      &__button .button_yellow {
+        padding: 10rem 16rem 10rem 16rem;
+      }
+      
+      .text {
+        font-size: 14rem;
+      }
+    }
+  }
+  
+  .search-results {
+    gap: 16rem;
+    
+    &__subtitle {
+      font-size: 40rem;
+      line-height: 95%;
+    }
+    
+    &__list {
+      gap: 11rem;
+    }
+  }
+}

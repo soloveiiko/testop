@@ -1,0 +1,31 @@
+.category {
+  display: flex;
+  width: 925rem;
+  padding-bottom: 60rem;
+  border-bottom: 1rem solid var(--color-silver);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  gap: 50rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+  &__counter {
+    display: flex;
+    color: var(--color-gray);
+    gap: 5rem;
+  }
+}
+
+.category-tabs {
+  justify-content: flex-start;
+  gap: 8rem;
+  
+  &__item {
+    padding: 0 24rem 0 15rem;
+    height: 48rem;
+
+    &.active{
+      padding: 4rem 32rem 4rem 18rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.about {
+    .join-us {
+        width: 100%;
+        /* min-height: 100vh; */
+
+        &__container {
+            padding: 202rem 0 220rem;
+            width: 100%;
+            justify-content: center;
+            gap:37rem;
+        }
+
+        &__headline {
+            color: var(--color-white);
+        }
+    }
+}

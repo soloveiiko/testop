@@ -1,0 +1,104 @@
+.modal {
+    width: 413rem;
+    border-radius: 22rem;
+    background: var(--color-white);
+    border: 0;
+    align-items: stretch;
+    padding: 28rem 36rem 28rem 48rem;
+    gap: 23rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: var(--transition);
+    margin: 0;
+    min-height: 443rem;
+    justify-content: flex-start;
+    //box-shadow: 0 8rem 16rem 0 rgba(0, 0, 0, 0.08), 0 0 4rem 0 rgba(0, 0, 0, 0.04);
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__top {
+        align-items: stretch;
+        // gap: 22rem;
+        gap: 28rem;
+
+        .button_close {
+            padding: 0;
+            width: fit-content;
+            height: fit-content;
+
+            .button__icon {
+                transition: var(--transition);
+            }
+
+            &:hover {
+                border-color: var(--color-white);
+                background-color: var(--color-white);
+
+                .button__icon {
+                    stroke: var(--color-yellow);
+                }
+            }
+        }
+
+        .icon {
+            &__container {
+                width: 100%;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    &__header {
+        gap: 10rem;
+        padding-right: 12rem;
+        align-items: flex-start;
+
+        .text {
+            line-height: 120%;
+            font-size: 16rem;
+            &_large {
+                &_bold {
+                   font-size: 32rem;
+                }
+            }
+        }
+    }
+
+    &__form {
+        padding-top: 8rem;
+        padding-right: 12rem;
+        gap: 28rem;
+        align-items: stretch;
+
+        &_animate {
+            padding-top: 2rem;
+        }
+
+        &__text {
+            line-height: 120%;
+            font-size: 16rem;
+        }
+
+        .text {
+            font-size: 16rem;
+            &__error {
+                font-size: 12rem;
+            }
+        }
+        .button_yellow {
+            width: 100%;
+            margin-top: 20rem;
+        }
+    }
+}

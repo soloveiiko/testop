@@ -1,0 +1,38 @@
+.product-slider {
+  position: relative;
+  width: 928rem;
+  
+  &__img-container {
+    width: 928rem;
+    height: 610rem;
+  }
+  
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  &__pagination {
+    position: absolute;
+    top: -60rem;
+    right: 0;
+    height: fit-content;
+    color: var(--color-gray);
+  }
+  
+  .product-prev-arrow, .product-next-arrow {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .product-prev-arrow {
+    left: -28rem;
+  }
+  
+  .product-next-arrow {
+    right: -28rem;
+  }
+}

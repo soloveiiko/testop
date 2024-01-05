@@ -1,0 +1,50 @@
+{
+    "Navigation": {
+        "about": "About Us",
+        "catalog": "Catalog",
+        "vacancy": "Vacancies",
+        "contact": "Contacts"
+    },
+    "Footer":{
+        "privacy_policy": "Privacy Policy",
+        "public_offering": "Public offering",
+        "copyright": "All rights reserved"
+    },
+    "Buttons":{
+        "more": "More",
+        "less": "Less",
+        "more_about": "more about the company",
+        "watch": "Watch",
+        "order": "Order",
+        "wait_for_call": "Waiting for a call",
+        "respond": "Respond",
+        "view_vacancies": "View vacancies",
+        "become_partner": "Become a partner"
+    },
+    "Search":{
+        "button":"Search",
+        "results": "Search results",
+        "placeholder":"Search for meat, fish or other products",
+        "clean": "Clean"
+    },
+    "Partnership":{
+        "become_partner": "Become a partner"
+    },
+    "Form":{
+        "text":"Leave your contact details and our specialist will contact you within 24 hours",
+        "name": "Name",
+        "phone": "Phone"
+    },
+    "HomePage":{
+        "catalog_title": "Catalog",
+        "top_management_title": "Top-management",
+        "partners_title": "Partners"
+    },
+    "AboutPage":{
+        "join_us": "Join us"
+    },
+    "CatalogPage":{
+        "title": "Catalog",
+        "products": "products"
+    }
+}

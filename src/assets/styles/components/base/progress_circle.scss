@@ -1,0 +1,30 @@
+.progress {
+    &__container {
+        position: relative;
+        padding-bottom: 60rem;
+
+        svg {
+            width: 48rem;
+            height: 48rem;
+            overflow: visible;
+        }
+    }
+
+
+    &__svg {
+        position: absolute;
+        transform: rotate(90deg);
+        left: 0;
+        top: 0;
+    }
+
+    &__circle {
+        stroke-width: 16rem;
+        stroke: var(--color-silver);
+
+        &.circle__focus {
+            stroke: var(--color-yellow);
+
+        }
+    }
+}

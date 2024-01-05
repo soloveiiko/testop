@@ -1,0 +1,79 @@
+.showreel {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  /* height: 892rem; */
+  justify-content: center;
+  width: 100%;
+  padding: 158rem 0 228rem;
+  /* background: var(--color-black); */
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+    width: 900rem;
+    height: 506rem;
+    padding: 30rem 40rem;
+    background: var(--color-white);
+  }
+
+  &__header {
+    width: 100%;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    gap: 12rem;
+    width: 163rem;
+    padding: 15rem;
+
+    .text {
+
+      font-size: 16rem;
+    }
+    
+    .button__text {
+      line-height: 1.2;
+    }
+
+    
+    .button__icon {
+      transition: var(--transition);
+      width: 10rem;
+    }
+    
+    &:hover {
+      .button__icon {
+        fill: var(--color-white);
+        stroke: var(--color-white);
+      }
+    }
+  }
+
+  &__logo {
+    width: auto;
+    height: 80rem;
+  }
+
+  &__subtitle {
+    padding-top: 9rem;
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 1112rem;
+    height: 100%;
+
+    svg {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

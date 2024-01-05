@@ -1,0 +1,10 @@
+@include lg {
+    .vacancy-list {
+        gap: 75rem;
+    }
+}
+@include sm {
+    .vacancy-list {
+        gap: 35rem;
+    }
+}

@@ -1,0 +1,45 @@
+.subbanner {
+  align-items: stretch;
+  width: 100%;
+  min-height: 474rem;
+  background: var(--color-yellow);
+  
+  &__container {
+    align-items: stretch;
+    padding: 80rem 0;
+  }
+  
+  &__content {
+    align-items: flex-start;
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 50%;
+    gap: 10rem 0;
+    
+    .content {
+      &__text {
+        max-width: 306rem;
+        padding-top: 4.7rem;
+        
+        &_large {
+          width: 100%;
+        }
+      }
+    }
+    
+    .logo__icon {
+      width: 79rem;
+      height: auto;
+      fill: var(--color-black);
+    }
+    
+    .button_white {
+      padding: 16.25rem 27rem;
+      background-color: transparent;
+      
+      &:hover {
+        border: 1rem solid var(--color-gray);
+      }
+    }
+  }
+}
